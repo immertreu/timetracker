@@ -1,0 +1,36 @@
+* {
+   -moz-box-sizing: border-box;
+}
+body {
+  color: $darkgray;
+  font-size: 16px;
+  font-family: $font-family;
+}
+h1 {
+  font-weight: 700;
+  text-align: center;
+}
+a {
+  color: $header_bgr;
+  outline: none;
+}
+.subtext {
+  margin-bottom: $spacing-unit*2;
+}
+.subhead {
+  font-style: italic;
+  text-align: center;
+}
+button {
+  padding: $spacing-unit/2;
+  background: $accent;
+  border-radius: 5px;
+  border: none;
+  color: $header_bgr;
+  font-size: $button-font-size;
+  &:hover {
+    background: $white;
+    color: $darkgray;
+    transition: background-color ease .5s;
+  }
+}
