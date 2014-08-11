@@ -33,4 +33,8 @@ angular.module('timetrackerApp')
         $location.url('/');
       });
     };
+
+    $scope.pageClass = 'page-date';
   }]);
+
+  //

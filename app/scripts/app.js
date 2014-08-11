@@ -13,6 +13,7 @@ angular
     'firebase',
     'ngResource',
     'ngRoute',
+    'ngAnimate',
   ])
   .config(function ($routeProvider) {
     $routeProvider

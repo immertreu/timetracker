@@ -2,6 +2,8 @@
    -moz-box-sizing: border-box;
 }
 body {
+  overflow-x: hidden;
+  background: $lightgray;
   color: $darkgray;
   font-size: 16px;
   font-family: $font-family;
@@ -13,6 +15,16 @@ h1 {
 a {
   color: $header_bgr;
   outline: none;
+}
+.container-fluid {
+  min-width: 100%;
+}
+.view {
+  @include clearfix;
+  position: relative;
+  min-height: 1000px;
+  padding: $spacing-unit*2 0;
+  background: $lightgray;
 }
 .subtext {
   margin-bottom: $spacing-unit*2;

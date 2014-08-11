@@ -1,0 +1,62 @@
+@mixin keyframes($animationName) {
+    @-webkit-keyframes $animationName {
+        @content;
+    }
+    @-moz-keyframes $animationName {
+        @content;
+    }
+    @-o-keyframes $animationName {
+        @content;
+    }
+    @keyframes $animationName {
+        @content;
+    }
+}
+@include keyframes(slideOutLeft) {
+  from { transform: translateX(0); }
+  to { transform: translateX(-100%); }
+}
+@include keyframes(slideInRight) {
+  from  { transform:translateX(100%); }
+  to    { transform: translateX(0); }
+}
+@include keyframes(slideInLeft) {
+  from  { transform:translateX(-100%); }
+  to    { transform: translateX(0); }
+}
+@include keyframes(slideOutRight) {
+  from  { transform:translateX(0%); }
+  to    { transform: translateX(100%); }
+}
+.page-main {
+  position: absolute;
+  z-index: 8888;
+  &.ng-enter {
+   -webkit-animation: slideInLeft 1s both ease-in;
+   -moz-animation:    slideInLeft 1s both ease-in;
+   -o-animation:      slideInLeft 1s both ease-in;
+   animation:         slideInLeft 1s both ease-in;
+  }
+  &.ng-leave {
+    -webkit-animation: slideOutLeft 1s both ease-in;
+    -moz-animation:    slideOutLeft 1s both ease-in; 
+    -o-animation:      slideOutLeft 1s both ease-in;
+    animation:         slideOutLeft 1s both ease-in; 
+  }
+}
+.page-date {
+  position: absolute;
+  z-index: 7777;
+  &.ng-enter {
+  -webkit-animation: slideInRight 1s both ease-in;
+  -moz-animation:    slideInRight 1s both ease-in;
+  -o-animation:      slideInRight 1s both ease-in;
+  animation:         slideInRight 1s both ease-in; 
+  }
+  &.ng-leave { 
+    -webkit-animation: slideOutRight 1s both ease-in;
+    -moz-animation:    slideOutRight 1s both ease-in;
+    -o-animation:      slideOutRight 1s both ease-in;      
+    animation:         slideOutRight 1s both ease-in; 
+  }
+}

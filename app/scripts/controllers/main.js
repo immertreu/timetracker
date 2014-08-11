@@ -9,4 +9,7 @@ angular.module('timetrackerApp')
     var sync = $firebase(firebaseUrl);
      
     $scope.dates = sync.$asArray();
+    
+    $scope.pageClass = 'page-main';
+
   }]);

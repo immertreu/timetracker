@@ -1,6 +1,6 @@
-<div>
+<div class="container">
   <h1>Enter Time for week of {{date.weekof}}</h1>
-  <form class="form--hours col-xs-12 col-md-4 center-block" ng-submit="submitHours($event)" name="hours" ng-class="{submitted: formSubmitted}" novalidate>
+  <form class="form-hours col-xs-12 col-md-4 center-block" ng-submit="submitHours($event)" name="hours" ng-class="{submitted: formSubmitted}" novalidate>
     <table>
       <col span="2" />
       <tbody>
@@ -62,7 +62,7 @@
         </tr>
       </tbody>
     </table>
-    <div class="form--hours--error" ng-show="hours.$dirty && hours.$invalid && formSubmitted">
+    <div class="form-hours-error" ng-show="hours.$dirty && hours.$invalid && formSubmitted">
       <p class="subhead">All fields are required.</p>
     </div>
     <button class="pull-right" type="submit" ng-click="saveHours()">Save Hours</button>
