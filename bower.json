@@ -9,6 +9,7 @@
     "bootstrap-sass-official": "~3.1.1",
     "angular-resource": "1.2.16",
     "angular-route": "1.2.16",
+    "angular-animate": "1.2.21",
     "firebase": "1.0.19",
     "angularfire": "~0.8.0",
     "firebase-simple-login": "1.6.2"
